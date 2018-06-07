@@ -93,7 +93,7 @@ options:
       exits before 10 seconds a SIGKILL is sent.
   queue_thresholds:
     type: string
-    default: "[['\\*', '\\*', 100, 200]]"
+    default: "[['\\*', '\\*', 500, 600]]"
     description: |
       List of RabbitMQ queue size check thresholds. Interpreted as YAML
       in format [<vhost>, <queue>, <warn>, <crit>]
